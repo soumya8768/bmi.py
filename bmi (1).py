@@ -2,7 +2,7 @@ import google.generativeai as genai
 import streamlit as st
 
 # Configure Gemini
-genai.configure(api_key="AIzaSyBDkhHDZepkdSjQ0UVsYR-xRof5LtyoPKo")
+genai.configure(api_key=st.secrets["Api_Key")
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # BMI Calculator
